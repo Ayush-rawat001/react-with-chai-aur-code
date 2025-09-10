@@ -37,6 +37,9 @@ function App() {
     passwordgenerator();
   }, [length, charallowed, numberallowed, passwordgenerator]);
 
+  const inputRef = useRef();
+
+
   return (
     <>
       <div className="w-full max-w-md mx-auto rounded-lg p-4 my-8 text-orange-500 bg-gray-700">
@@ -95,6 +98,9 @@ function App() {
             />
             <label>characters</label>
           </div>
+          <input ref={inputRef} type="text" placeholder="Type here" />
+
+<button onClick={() => inputRef.current.select()}>Focus</button>
         </div>
       </div>
     </>
