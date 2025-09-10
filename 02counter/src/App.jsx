@@ -6,21 +6,17 @@ function App() {
 let [count,setcounter]=useState(0);
 
 function add(){
-  if(count==20){
-    setcounter(20);
-  }
-  else{
+
 setcounter(count+1);
-  }
-  
+  setcounter(count+1);
+  setcounter(count+1);
+  setcounter(count+1);
 }
 function sub(){
-  if(count==0){
-    setcounter(0);
-  }
-  else{
+  
+  
 setcounter(count-1);
-  }
+  
   
 }
 
